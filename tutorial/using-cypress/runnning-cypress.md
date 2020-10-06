@@ -4,9 +4,9 @@ Before we get started, the first thing that we need to do is install Cypress on 
 
 ## Installing Cypress
 
-As long as you have Node.js installed on your machine running cypress is straightforward.
+As long as you have Node.js installed on your machine running Cypress is straightforward.
 
-1. Open a command prompt or Powershell window (from now on called te **terminal** window)
+1. Open a command prompt or Powershell window (from now on called the **terminal** window)
 2. Create a new folder on your machine
 
 > **Note**: For ease of clean up I use `C:\Temp\Cypress\Sandbox` for experimenting
@@ -16,7 +16,7 @@ As long as you have Node.js installed on your machine running cypress is straigh
 
 These commands should create a `package-lock.json` file and a `node_modules` folder.
 
-The first time you run this command it will also install the full cypress application in your user profile. For windows this is: `C:\Users\<username>\AppData\Local\Cypress\Cache\4.9.0\Cypress`
+The first time you run this command it will also install the full cypress application in your user profile. For windows this is: `C:\Users\<username>\AppData\Local\Cypress\Cache\<cypress_version>\Cypress`
 
 > **Note**: This process can take some time, but don't worry it only happens the first time we install. If anything fails with your installation you can also remove this folder in order to make a fresh install.
 
@@ -54,7 +54,7 @@ We can now run Cypress, but that command line (`./node_modules/.bin/cypress open
 
 We can use npm can make our life easier here.
 
-As long as the version of npm installed is greater than 5.2.0 we can use npx to run Cypress
+As long as the version of npm installed is greater than 5.2.0 we can use npx to run Cypress. Open the Terminal and run:
 
 `npx cypress open`
 
@@ -63,6 +63,10 @@ This command opens the Cypress application in interactive mode for us.
 `npx cypress run`
 
 This command opens Cypress in headless mode for us. But if we try this we can see that there are a lot of example files that it will run. Press `ctrl` + `c` to cancel the process.
+
+///
+/// I would leave the initial setup as it is and move the 'running 1 spec file' and 'setting up the scripts' to a different section because this can also be done via the Cypress UI)
+///
 
 Let's run it one more time, but this time limit the run to one spec, the same actions spec that we ran in the interactive application.
 
